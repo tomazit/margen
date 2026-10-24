@@ -1,0 +1,7 @@
+{
+  "name": "margen-estudio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Estudio independiente de diseño — landing editorial",
+  "scripts": {"dev": "node server.cjs", "start": "node server.cjs"}
+}
