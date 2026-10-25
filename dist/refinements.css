@@ -1,0 +1,169 @@
+/* Legibility and grid refinements; palette, mockup artwork and copy remain intact. */
+html{scroll-padding-top:110px}
+body{font-size:16px;color:var(--ink)}
+.header,.hero,.section-pad,.footer{width:100%;max-width:1464px;margin-inline:auto;padding-inline:clamp(24px,4vw,58px)}
+.header{height:auto;min-height:103px}
+.desktop-nav{display:flex;align-items:center;align-self:center;min-height:72px;font-size:12px;letter-spacing:.04em;line-height:1}
+.desktop-nav a{display:inline-flex;align-items:center;min-height:48px;line-height:1}
+.desktop-nav sup{position:relative;top:-.3em;vertical-align:baseline;line-height:1}
+.desktop-nav a:after{background:currentColor}
+.desktop-nav sup{font-size:12px}
+.contact-link{display:inline-flex;align-items:center;gap:20px;padding:15px 20px;background:var(--burgundy);color:var(--cream);font-size:16px;font-weight:500;transition:background .2s ease,transform .2s ease}
+.contact-link:after{display:none}
+.contact-link:hover{background:var(--deep);transform:translateY(-2px)}
+.contact-link span{margin:0;font-size:20px}
+.hero{padding-top:37px;padding-bottom:54px}
+.hero-top .eyebrow,.location,.eyebrow{font-size:12px;letter-spacing:.08em;line-height:1.55}
+.hero-composition{padding:60px 0 16px}
+h1{font-size:clamp(56px,9vw,140px);letter-spacing:-.045em}
+.hero-second{padding-left:9%}
+.hero-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.hero-bottom p{order:0;max-width:740px;margin:0;font-size:clamp(18px,2vw,20px);line-height:1.55}
+.explore-link{font-size:12px;letter-spacing:.08em}
+.section-pad{padding-block:72px}
+.work{padding-top:20px}
+.section-heading{padding-top:34px;margin-bottom:38px}
+.section-heading h2,.studio-copy h2,.services-intro h2,.contact h2{font-size:clamp(40px,5vw,72px);line-height:1.08;letter-spacing:-.01em}
+.section-aside{width:34%}
+.section-aside .eyebrow{font-size:12px;letter-spacing:.08em;color:var(--ink)}
+.section-aside p{font-size:16px;line-height:1.55;color:var(--muted)}
+.projects-grid{gap:42px 28px}
+.project-info h3{font-size:clamp(20px,2.1vw,24px);font-weight:550;letter-spacing:-.015em}
+.project-info>span{font-size:16px;line-height:1.5;color:var(--ink)}
+.project-info .project-year{font-size:13px;color:var(--ink)}
+.view-project{font-size:12px;letter-spacing:.08em}
+.work-foot>span{font-size:16px;line-height:1.55;color:var(--muted)}
+.text-link{font-size:16px}
+.marquee>div{animation-duration:35s}
+.studio,.services{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(36px,6vw,84px);align-items:center}
+.studio{padding-block:90px}
+.studio-mark{min-width:0}
+.studio-copy h2{margin-top:26px;margin-bottom:28px}
+.studio-copy p,.services-intro p,.service-body p,.dialog-copy>p,.contact-dialog>p{max-width:62ch;font-size:16px;line-height:1.55;color:var(--muted);margin-bottom:15px}
+.studio-copy .eyebrow,.services-intro .eyebrow,.contact-dialog>.eyebrow,.dialog-copy>.eyebrow{font-size:12px;letter-spacing:.08em;color:var(--ink)}
+.studio-copy .text-link{margin-top:14px}
+.services{align-items:start;padding-top:74px;padding-bottom:96px}
+.services-intro{position:static}
+.services-intro h2{margin-top:24px}
+.services-intro p{margin-top:24px;color:var(--muted)}
+.services-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;align-self:stretch}
+.service-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;border-top:1px solid var(--line);padding:23px 0 25px;align-content:start}
+.service-item:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.service-number{font-size:13px;color:var(--burgundy);padding-top:7px}
+.mark-label,.mark-bottom{font-size:12px;letter-spacing:.08em;color:var(--burgundy)}
+.service-body h3{font-size:clamp(24px,3vw,36px);line-height:1.15;letter-spacing:-.01em;font-weight:500;margin-bottom:13px}
+.service-body p{margin:0;color:var(--muted)}
+.service-body>span{display:block;margin-top:17px;color:var(--burgundy);font-size:12px;letter-spacing:.08em;line-height:1.55}
+.contact.section-pad{max-width:none;padding:38px max(clamp(24px,4vw,58px),calc((100vw - 1348px)/2)) 40px}
+.contact-top .eyebrow,.contact-top>span:last-child{font-size:12px;letter-spacing:.08em;color:var(--cream)}
+.contact-main{padding-block:54px 42px}
+.contact h2{color:var(--cream)}
+.contact h2 em{color:var(--cream)}
+.contact-cta{display:inline-flex;align-items:center;justify-content:center;gap:48px;min-width:230px;min-height:76px;padding:18px 26px;border:1px solid var(--cream);background:var(--cream);color:var(--burgundy);font-size:20px;font-weight:500;transition:transform .2s ease,background .2s ease,color .2s ease}
+.contact-cta span{font-size:24px;transition:transform .2s ease}
+.contact-cta:hover{transform:translateY(-3px);background:var(--pink)}
+.contact-cta:hover span{transform:translate(3px,-3px)}
+.contact-bottom{border-top-color:#f7f4ef55;padding-top:24px}
+.contact-bottom p{font-size:16px;line-height:1.55;color:var(--cream)}
+.footer{min-height:104px;padding-block:28px;gap:28px}
+.footer>span{font-size:13px;line-height:1.55;letter-spacing:.05em;color:var(--ink)}
+.footer-credit{font-size:13px;line-height:1.55;letter-spacing:.04em;color:var(--ink)}
+.developer-orbit{width:38px;height:38px;flex-basis:38px}
+.developer-orbit img{width:34px;height:34px}
+.art-corner,.view-project,.oliva-card>span,.oliva-card small,.oliva-bag small,.magazine-top,.magazine small,.savia-box>span:not(.savia-symbol),.savia-box small,.forma-poster>small,.forma-bottom{font-size:max(12px, .82rem);letter-spacing:.08em}
+.oliva-card strong span{font-size:12px}
+.savia-box small{letter-spacing:0;line-height:1.4}
+.forma-bottom{letter-spacing:.02em}
+.forma-art .art-corner,.forma-art .view-project{color:var(--burgundy)}
+.back-top{width:40px;height:40px}
+.project-dialog,.contact-dialog{max-width:min(840px,calc(100vw - 32px));max-height:min(90svh,900px)}
+.dialog-copy{padding:clamp(24px,4vw,40px)}
+.dialog-copy h2,.contact-dialog h2{font-size:clamp(40px,5vw,60px);letter-spacing:-.01em;line-height:1.08}
+.dialog-copy h2{margin:16px 0}
+.dialog-tags{font-size:13px;letter-spacing:.08em;color:var(--ink);margin:22px 0 30px}
+.dialog-copy .text-link{font-size:16px}
+.contact-dialog{width:540px;padding:clamp(24px,5vw,45px)}
+.contact-dialog h2{color:var(--burgundy);margin:24px 0 20px}
+.contact-dialog>p{margin-bottom:0}
+.contact-dialog label{font-size:16px;margin:20px 0 8px}
+.contact-dialog input,.contact-dialog textarea{font-size:16px;line-height:1.5}
+.form-submit{font-size:16px;padding:16px}
+.form-status{font-size:13px;line-height:1.55}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--burgundy);outline-offset:4px}
+.contact button:focus-visible,.contact a:focus-visible{outline-color:var(--cream)}
+
+@media(max-width:1000px){
+  .section-pad{padding-block:62px}
+  .studio-mark{height:400px}
+  .studio-copy h2{font-size:clamp(40px,5vw,56px)}
+  .services{column-gap:36px}
+  .services-list{gap:0 18px}
+  .service-item{grid-template-columns:24px minmax(0,1fr);gap:9px}
+  .contact-cta{min-width:190px;gap:28px}
+}
+@media(max-width:680px){
+  .header{min-height:81px}
+  .desktop-nav,.header>.contact-link{display:none}
+  .mobile-nav a:last-child{align-self:flex-start;padding:12px 18px;background:var(--burgundy);color:var(--cream);font-family:var(--sans);font-size:16px}
+  .hero{padding-top:26px;padding-bottom:38px}
+  .hero-top .eyebrow{font-size:12px;letter-spacing:.07em}
+  .location{font-size:12px;letter-spacing:.06em}
+  .hero-composition{padding:58px 0 13px}
+  h1{font-size:clamp(56px,11.5vw,77px);line-height:1.04;letter-spacing:-.035em}
+  .hero-second{padding-left:0}
+  .hero-bottom{gap:21px}
+  .hero-bottom p{font-size:18px;line-height:1.55}
+  .section-pad{padding-block:55px}
+  .work{padding-top:15px}
+  .section-heading{padding-top:27px;margin-bottom:29px}
+  .section-heading h2,.studio-copy h2,.services-intro h2{font-size:clamp(40px,10vw,48px);letter-spacing:-.01em;line-height:1.08}
+  .section-aside{width:100%;margin-top:20px;display:grid;gap:11px}
+  .section-aside p{font-size:16px}
+  .projects-grid{grid-template-columns:1fr;gap:27px}
+  .project:nth-child(2){padding-top:0}
+  .project-image,.project:nth-child(2) .project-image,.project:nth-child(3) .project-image{height:365px}
+  .project-info h3{font-size:22px}
+  .project-info>span{font-size:16px}
+  .project-info .project-year{font-size:13px}
+  .view-project{opacity:1;transform:none;font-size:12px;padding:9px 11px}
+  .work-foot{align-items:flex-start;gap:20px;flex-direction:column;margin-top:24px}
+  .work-foot>span{font-size:16px}
+  .studio{grid-template-columns:1fr;gap:30px}
+  .studio-mark{height:350px}
+  .studio-copy h2{font-size:clamp(40px,10vw,48px);margin-top:19px}
+  .studio-copy p,.services-intro p,.service-body p{font-size:16px;line-height:1.55}
+  .services{grid-template-columns:1fr;gap:28px}
+  .services-intro{position:static}
+  .services-intro h2{font-size:clamp(40px,10vw,48px)}
+  .services-list{grid-template-columns:1fr;gap:0}
+  .service-item{grid-template-columns:28px minmax(0,1fr);padding-block:22px}
+  .service-item:nth-last-child(2){border-bottom:0}
+  .service-item:last-child{border-bottom:1px solid var(--line)}
+  .service-body h3{font-size:26px}
+  .service-body>span{font-size:12px}
+  .contact.section-pad{padding:28px 24px}
+  .contact-top{align-items:flex-start;gap:14px;flex-wrap:wrap}
+  .contact-top>span:last-child{display:block;font-size:12px;letter-spacing:.08em;line-height:1.5;color:var(--cream)}
+  .contact-top .eyebrow{font-size:12px}
+  .contact-main{padding:39px 0 30px;align-items:end;gap:20px;flex-wrap:wrap}
+  .contact h2{font-size:clamp(40px,10vw,52px)}
+  .contact-cta{width:100%;min-height:64px;justify-content:space-between}
+  .contact-bottom{padding-top:20px}
+  .contact-bottom p{font-size:16px}
+  .footer{padding-block:28px;grid-template-columns:1fr auto;row-gap:22px}
+  .footer>span{font-size:13px}
+  .footer>span:nth-child(2){grid-column:1;grid-row:2}
+  .footer-credit{grid-column:1 / -1;grid-row:3;font-size:13px;margin:0}
+  .back-top{grid-row:1;grid-column:2;justify-self:end}
+  .contact-dialog{padding:35px 25px}
+  .contact-dialog h2{font-size:48px}
+  .dialog-copy{padding:24px}
+  .dialog-copy h2{font-size:46px}
+  .project-dialog .dialog-art .project-image{height:365px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .marquee>div{animation:none!important}
+  .js-ready .reveal{opacity:1!important;transform:none!important}
+}

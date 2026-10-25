@@ -17,12 +17,6 @@ mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMe
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 matchMedia('(min-width: 681px)').addEventListener('change', closeMenu);
 
-document.querySelectorAll('.services-list details').forEach(detail => {
-  detail.addEventListener('toggle', () => {
-    if (detail.open) document.querySelectorAll('.services-list details').forEach(other => { if (other !== detail) other.open = false; });
-  });
-});
-
 const projects = [
   {name:'Oliva', text:'Una identidad para una marca de objetos que cree en habitar con intención. Construimos un universo sereno: formas orgánicas, tonos oliva y una tipografía que invita a bajar un cambio. El sistema se extiende de la identidad al packaging, con una misma idea: menos cosas, más sentido.', tags:'ESTRATEGIA DE MARCA / IDENTIDAD VISUAL / PACKAGING · 2026'},
   {name:'Entre', text:'Una revista cultural que encuentra historias en los espacios intermedios. Diseñamos un sistema editorial que combina una grilla precisa con gestos expresivos. Ritmos, pausas y contrastes para descubrir otra forma de mirar.', tags:'DISEÑO EDITORIAL / DIRECCIÓN DE ARTE · 2025'},
@@ -59,9 +53,10 @@ document.querySelector('#contact-form').addEventListener('submit', e => {
   e.preventDefault();
   const form = e.currentTarget;
   const name = form.elements.name.value.trim();
+  const email = form.elements.email.value.trim();
   const idea = form.elements.idea.value.trim();
-  if (!name || !idea) { form.querySelector('.form-status').textContent = 'Completá tu nombre y contanos tu idea.'; return; }
-  const blob = new Blob([`CONSULTA PARA MARGEN\n\nNombre: ${name}\n\nProyecto:\n${idea}\n`], {type:'text/plain;charset=utf-8'});
+  if (!name || !email || !idea) { form.querySelector('.form-status').textContent = 'Completá tu nombre, tu email y contanos tu idea.'; return; }
+  const blob = new Blob([`CONSULTA PARA MARGEN\n\nNombre: ${name}\nEmail: ${email}\n\nProyecto:\n${idea}\n`], {type:'text/plain;charset=utf-8'});
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url; link.download = 'mi-proyecto-margen.txt'; link.click();
